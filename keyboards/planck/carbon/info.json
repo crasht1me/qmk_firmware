@@ -1,0 +1,8 @@
+{
+  "keyboard_name": "Planck Carbon",
+  "keyboard_folder": "planck/carbon",
+  "manufacturer": "Baetheus",
+  "identifier": "FEED:6060:0042",
+  "maintainer": "rvolosatovs",
+  "bootloader": "halfkay"
+}
