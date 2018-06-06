@@ -50,6 +50,9 @@ endif
 ifeq ($(strip $(KEYBOARD)), planck/light)
     BOOTLOADER = atmel-dfu
 endif
+ifeq ($(strip $(KEYBOARD)), planck/carbon)
+    BOOTLOADER = halfkay
+endif
 
 # Interrupt driven control endpoint task(+60)
 OPT_DEFS += -DINTERRUPT_CONTROL_ENDPOINT
