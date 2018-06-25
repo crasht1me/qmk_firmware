@@ -16,6 +16,7 @@
  */
 
 #include QMK_KEYBOARD_H
+/*#include <print.h>*/
 
 enum preonic_layers {
   _QWERTY,
@@ -124,6 +125,7 @@ uint32_t layer_state_set_user(uint32_t state) {
 }
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+  /*xprintf("process_record_user %d, %p\n", keycode, record);*/
   switch (keycode) {
         case QWERTY:
           if (record->event.pressed) {
